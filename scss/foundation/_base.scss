@@ -1,0 +1,30 @@
+body {
+  background-color: $bodyBg;
+  color: $fontBlack;
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-size: 14px;
+}
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+img {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: inherit;
+  }
+}
+time {
+  display: block;
+}

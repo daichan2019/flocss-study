@@ -1,0 +1,13 @@
+.p-read-more {
+  color: $fontWhite;
+  font-size: 18px;
+  height: 30px;
+  margin: 60px auto 0;
+  width: 397px;
+
+  a {
+    background-color: $readMoreBg;
+    height: 100%;
+    width: 100%;
+  }
+}

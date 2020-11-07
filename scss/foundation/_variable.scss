@@ -1,0 +1,35 @@
+// BASE COLORS
+$white: #fffffe !default;
+$black: #333 !default;
+$grey: #eee !default;
+$sement: #f9f9f9 !default;
+$yellow: #f3bf27 !default;
+$green: #558f54 !default;
+
+// COLOR TO USE
+$fontWhite: $white !default;
+$fontBlack: $black !default;
+$borderColor: $grey !default;
+$bodyBg: $white !default;
+$footerBg: $black !default;
+$sidebarBg: $sement !default;
+$jumbotronBg: $black !default;
+$tagBg: $yellow !default;
+$readMoreBg: $green !default;
+
+// MEDIA QUERIES
+// min-width
+$breakpoint-up: (
+  "sm": "screen and (min-width: 600px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 960px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
+
+// max-width
+$breakpoint-down: (
+  "sm": "screen and (max-width: 599px)",
+  "md": "screen and (max-width: 767px)",
+  "lg": "screen and (max-width: 959px)",
+  "xl": "screen and (max-width: 1199px)",
+) !default;

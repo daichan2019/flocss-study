@@ -1,0 +1,9 @@
+.l-wrapper {
+  max-width: 1020px;
+
+  &--front {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 65px;
+  }
+}

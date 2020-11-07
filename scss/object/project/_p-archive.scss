@@ -1,0 +1,32 @@
+.p-archives {
+  margin-top: 20px;
+}
+
+.p-archive {
+  a {
+    display: flex;
+  }
+
+  &__img {
+    height: 56px;
+    width: 100px;
+  }
+
+  &__title-wrap {
+    margin-left: 10px;
+    width: calc(100% - 110px);
+  }
+
+  time {
+    font-size: 12px;
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.p-archive + .p-archive {
+  margin-top: 20px;
+}

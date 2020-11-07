@@ -1,0 +1,14 @@
+.l-sidebar {
+  height: fit-content;
+  width: 320px;
+
+  &__inner {
+    background-color: $sidebarBg;
+    padding: 20px 15px 40px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
