@@ -1,4 +1,4 @@
-.c-jumbotron {
+.p-jumbotron {
   background-image: url(./../../../images/sample03.jpg);
   height: 0;
   padding-top: 56.25%;
@@ -40,7 +40,7 @@
 }
 
 @include mq-down(lg) {
-  .c-jumbotron {
+  .p-jumbotron {
     left: 50%;
     margin-left: -50vw;
     width: 100vw;
