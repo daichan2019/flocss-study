@@ -10,6 +10,7 @@ $green: #558f54 !default;
 $fontWhite: $white !default;
 $fontBlack: $black !default;
 $borderColor: $grey !default;
+$hamburgerBg: $black !default;
 $bodyBg: $white !default;
 $footerBg: $black !default;
 $sidebarBg: $sement !default;
@@ -20,16 +21,16 @@ $readMoreBg: $green !default;
 // MEDIA QUERIES
 // min-width
 $breakpoint-up: (
-  "sm": "screen and (min-width: 600px)",
+  "sm": "screen and (min-width: 560px)",
   "md": "screen and (min-width: 768px)",
   "lg": "screen and (min-width: 960px)",
-  "xl": "screen and (min-width: 1200px)",
+  "xl": "screen and (min-width: 1025px)",
 ) !default;
 
 // max-width
 $breakpoint-down: (
-  "sm": "screen and (max-width: 599px)",
+  "sm": "screen and (max-width: 559px)",
   "md": "screen and (max-width: 767px)",
   "lg": "screen and (max-width: 959px)",
-  "xl": "screen and (max-width: 1199px)",
+  "xl": "screen and (max-width: 1024px)",
 ) !default;

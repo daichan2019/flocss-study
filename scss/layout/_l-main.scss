@@ -1,4 +1,11 @@
 .l-main {
   max-width: 640px;
-  width: 100%;
+  width: calc(100% - 380px);
+}
+
+@include mq-down(lg) {
+  .l-main {
+    max-width: none;
+    width: 100%;
+  }
 }

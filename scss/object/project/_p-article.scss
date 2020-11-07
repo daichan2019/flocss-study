@@ -24,3 +24,13 @@
 .p-article:nth-of-type(n + 3) {
   margin-top: 30px;
 }
+
+@include mq-down(sm) {
+  .p-article {
+    width: 100%;
+  }
+
+  .p-article + .p-article {
+    margin-top: 30px;
+  }
+}

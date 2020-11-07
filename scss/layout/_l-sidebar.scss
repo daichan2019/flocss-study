@@ -12,3 +12,11 @@
     font-weight: 600;
   }
 }
+
+@include mq-down(lg) {
+  .l-sidebar {
+    margin: 40px 0 0 0;
+    max-width: none;
+    width: 100%;
+  }
+}

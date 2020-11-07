@@ -1,4 +1,4 @@
-.p-read-more {
+.p-button {
   color: $fontWhite;
   font-size: 18px;
   height: 30px;
@@ -9,5 +9,12 @@
     background-color: $readMoreBg;
     height: 100%;
     width: 100%;
+  }
+}
+
+@include mq-down(sm) {
+  .p-button {
+    max-width: none;
+    width: 61.8vw;
   }
 }

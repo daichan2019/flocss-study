@@ -7,3 +7,20 @@
     margin: 30px auto 65px;
   }
 }
+
+@include mq-down(xl) {
+  .l-wrapper {
+    &--front {
+      margin: 30px 10px 65px;
+    }
+  }
+}
+
+@include mq-down(lg) {
+  .l-wrapper {
+    &--front {
+      flex-direction: column;
+      margin: 0 10px 65px;
+    }
+  }
+}

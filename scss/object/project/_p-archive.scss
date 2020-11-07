@@ -1,4 +1,6 @@
 .p-archives {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -27,6 +29,38 @@
   }
 }
 
-.p-archive + .p-archive {
-  margin-top: 20px;
+@include mq-up(lg) {
+  .p-archive + .p-archive {
+    margin-top: 20px;
+  }
+}
+
+@include mq-down(lg) {
+  .p-archive {
+    width: calc(50% - 20px);
+
+    &:nth-of-type(2n) {
+      margin-left: 20px;
+    }
+
+    &:nth-of-type(n + 3) {
+      margin-top: 20px;
+    }
+  }
+}
+
+@include mq-down(sm) {
+  .p-archive {
+    width: 100%;
+    &:nth-of-type(2n) {
+      margin-left: 0;
+    }
+
+    &:nth-of-type(n + 3) {
+      margin-top: 0;
+    }
+  }
+  .p-archive + .p-archive {
+    margin-top: 20px;
+  }
 }

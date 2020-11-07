@@ -4,6 +4,7 @@
   height: 50px;
   position: sticky;
   top: 0;
+  z-index: 999;
 
   &__inner {
     align-items: center;
@@ -25,5 +26,56 @@
   &__subtitle {
     font-size: 14px;
     margin-left: 20px;
+  }
+
+  &__nav-toggle {
+    display: none;
+  }
+}
+
+@include mq-down(xl) {
+  .l-header {
+    &__inner {
+      width: 98%;
+    }
+  }
+}
+
+@include mq-down(lg) {
+  .l-header {
+    &__subtitle {
+      display: none;
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__nav-toggle {
+      display: inline-block;
+      height: 25px;
+      position: relative;
+      width: 30px;
+
+      span {
+        background-color: $hamburgerBg;
+        border-radius: 4px;
+        height: 4px;
+        position: absolute;
+        width: 100%;
+      }
+
+      span:first-of-type {
+        top: 0;
+      }
+
+      span:nth-of-type(2) {
+        top: 10px;
+      }
+
+      span:last-of-type {
+        top: 20px;
+      }
+    }
   }
 }
