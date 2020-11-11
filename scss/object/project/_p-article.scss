@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
+
+  &--individual-page {
+    margin-top: 30px;
+  }
 }
 
 .p-article {

@@ -1,0 +1,55 @@
+.p-pagination {
+  margin: 60px auto 0;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item--arrow {
+    color: $paginationColor;
+    display: inline-block;
+    font-size: 15px;
+    height: 22px;
+    position: relative;
+    text-decoration: none;
+    width: 8px;
+  }
+
+  &__item--arrow span {
+    bottom: 0;
+    content: "";
+    height: 6px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 6px;
+  }
+
+  &__item--arrow-pre span {
+    border-left: 1px solid $paginationColor;
+    border-top: 1px solid $paginationColor;
+    left: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+  }
+
+  &__item--arrow-next span {
+    border-right: 1px solid $paginationColor;
+    border-top: 1px solid $paginationColor;
+    right: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &__item a {
+    background-color: $paginationColor;
+    color: $fontWhite;
+    height: 22px;
+    width: 22px;
+  }
+
+  li:nth-of-type(n + 2) {
+    margin-left: 10px;
+  }
+}

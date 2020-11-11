@@ -6,11 +6,27 @@
     justify-content: space-between;
     margin: 30px auto 65px;
   }
+
+  &--individual-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 65px;
+  }
+
+  &--admin {
+    margin: 60px auto 325px;
+    max-width: 640px;
+    width: 100%;
+  }
 }
 
 @include mq-down(xl) {
   .l-wrapper {
     &--front {
+      margin: 30px 10px 65px;
+    }
+
+    &--individual-page {
       margin: 30px 10px 65px;
     }
   }
@@ -21,6 +37,10 @@
     &--front {
       flex-direction: column;
       margin: 0 10px 65px;
+    }
+
+    &--individual-page {
+      flex-direction: column;
     }
   }
 }

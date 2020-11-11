@@ -1,0 +1,21 @@
+.p-company-info {
+  margin-top: 30px;
+
+  &__item {
+    border-bottom: 1px solid $borderColor;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+    padding: 20px 0;
+  }
+
+  &__title {
+    padding-left: 20px;
+    width: 33%;
+  }
+
+  &__sentence {
+    max-width: 397px;
+    width: calc(100% - 33%);
+  }
+}
