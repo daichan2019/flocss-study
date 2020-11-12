@@ -3,6 +3,7 @@ const { src, dest, watch } = require("gulp");
 // Sassをコンパイルするプラグインを読み込みます
 const sass = require("gulp-sass");
 
+// gulp-sass-globプラグインを読み込みます
 const sassGlob = require("gulp-sass-glob");
 
 /**
@@ -11,6 +12,7 @@ const sassGlob = require("gulp-sass-glob");
 const compileSass = () =>
   // style.scssファイルを取得
   src("scss/*.scss")
+    // sass-globを有効にする
     .pipe(sassGlob())
     // Sassのコンパイルを実行
     .pipe(
